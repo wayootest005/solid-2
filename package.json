@@ -1,0 +1,19 @@
+{
+  "name": "root",
+  "scripts": {
+    "start": "turbo run build dev",
+    "dev:b": "turbo run build --filter=./apps/*",
+    "dev:s": "turbo run serve --filter=./apps/*",
+    "lint": "turbo run lint",
+    "postinstall": "tsplus-install"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "prettier": "^2.5.1",
+    "turbo": "latest",
+    "vitest": "^0.18.1",
+    "@tsplus/installer": "0.0.127",
+    "@types/node": "18.0.6",
+    "typescript": "^4.6.3"
+  }
+}
