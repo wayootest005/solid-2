@@ -1,41 +1,27 @@
 {
   "pipeline": {
     "start": {
-      "dependsOn": [
-        "^start"
-      ],
-      "outputs": [
-        "dist/**",
-        ".next/**"
-      ]
+      "dependsOn": ["^start"],
+      "outputs": ["dist/**", ".next/**"]
     },
     "app:dev": {
-      "dependsOn": [
-        "^app:dev"
-      ],
-      "outputs": [
-        "dist/**",
-        ".next/**"
-      ]
+      "dependsOn": ["^app:dev"],
+      "outputs": ["dist/**", ".next/**"]
     },
     "build": {
-      "dependsOn": [
-        "^build"
-      ],
-      "outputs": [
-        "dist/**"
-      ]
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
     },
     "lint": {
       "outputs": []
     },
     "dev": {
-      "dependsOn": [
-        "^dev"
-      ],
-      "outputs": [
-        "dist/**"
-      ]
+      "dependsOn": ["^dev"],
+      "outputs": ["dist/**"]
+    },
+    "serve": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
     }
   }
 }
