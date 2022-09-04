@@ -1,4 +1,3 @@
-import '@effect/core/global';
 import '@effect/html/global';
 /**
  * @tsplus global

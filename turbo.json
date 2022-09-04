@@ -8,8 +8,8 @@
       "dependsOn": ["^app:dev"],
       "outputs": ["dist/**", ".next/**"]
     },
-    "build": {
-      "dependsOn": ["^build"],
+    "build:watch": {
+      "dependsOn": ["^build:watch"],
       "outputs": ["dist/**"]
     },
     "lint": {
