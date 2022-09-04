@@ -1,5 +1,0 @@
-export class MissingAttributeUpdateHandlerException {}
-export class MissingWireException {}
-
-export type MissingAttributeUpdateHandlerExceptionConstructor = typeof MissingAttributeUpdateHandlerException
-export type MissingWireExceptionConstructor = typeof MissingWireException
