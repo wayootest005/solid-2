@@ -20,7 +20,7 @@
       "outputs": ["dist/**"]
     },
     "serve": {
-      "dependsOn": ["^build"],
+      "dependsOn": ["^build:watch"],
       "outputs": ["dist/**"]
     }
   }

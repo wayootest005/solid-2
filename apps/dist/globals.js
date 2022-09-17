@@ -1,2 +1,2 @@
-import '@effect/html/global';
+export {};
 //# sourceMappingURL=globals.js.map
