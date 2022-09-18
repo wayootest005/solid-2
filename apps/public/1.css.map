@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../www/1.css"],
+  "sourcesContent": ["\n      p {\n        border: solid 1px blue;\n        padding: 8px;\n      }\n    "],
+  "mappings": ";AACM;AACE;AACA;;",
+  "names": []
+}

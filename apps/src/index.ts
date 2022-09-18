@@ -1,5 +1,4 @@
 import './globals';
-import '../assets/css/main.css';
 
 const myPage = html` <div>Here's my main page.</div> `;
 
