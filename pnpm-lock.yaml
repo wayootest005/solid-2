@@ -24,6 +24,7 @@ importers:
     specifiers:
       '@11ty/eleventy': ^1.0.1
       '@11ty/eleventy-plugin-syntaxhighlight': ^4.0.0
+      '@chialab/esbuild-plugin-html': ^0.17.0
       '@chialab/esbuild-plugin-postcss': latest
       '@chialab/postcss-preset-chialab': ^0.17.0
       '@chialab/rna': ^0.17.3
@@ -90,6 +91,7 @@ importers:
     devDependencies:
       '@11ty/eleventy': 1.0.2
       '@11ty/eleventy-plugin-syntaxhighlight': 4.1.0
+      '@chialab/esbuild-plugin-html': 0.17.0
       '@chialab/esbuild-plugin-postcss': 0.17.1_ts-node@10.9.1
       '@chialab/postcss-preset-chialab': 0.17.0_postcss@8.4.16
       '@chialab/rna': 0.17.3_ki55erv377txdqxebxa3wbhzae

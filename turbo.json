@@ -10,21 +10,23 @@
     },
     "build:watch": {
       "dependsOn": ["^build:watch"],
-      "outputs": ["dist/**"]
+      "outputs": ["dist/**"],
+      "cache": false
     },
+
     "lint": {
       "outputs": []
     },
     "bundle": {
-      "dependsOn": ["build:watch"],
-      "outputs": ["www/**"]
+      "dependsOn": ["^bundle"],
+      "outputs": ["public/**"]
     },
     "dev": {
       "dependsOn": ["^dev"],
       "outputs": ["dist/**"]
     },
     "serve": {
-      "dependsOn": ["^build:watch"],
+      "dependsOn": ["^bundle"],
       "outputs": ["dist/**"]
     }
   }

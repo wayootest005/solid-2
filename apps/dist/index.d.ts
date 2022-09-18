@@ -1,2 +1,2 @@
-import './globals';
+export {};
 //# sourceMappingURL=index.d.ts.map
