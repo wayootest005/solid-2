@@ -1,8 +1,9 @@
 import './globals';
+//import './index.css';
 
 const myPage = html` <div>Here's my main page.</div> `;
 
-const myListView = html`<p class="text-blue-600">The quick brown fox...</p>`;
+const myListView = html`<div>Here's my main page4.</div>`;
 
 const myPage2 = html` ${myPage} ${myListView} `;
 

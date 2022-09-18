@@ -1,12 +1,9 @@
 {
-    "ts-node": {
-        "esm": true
-    },
     "compilerOptions": {
-        "target": "es6",
+        "target": "ESNext",
         "module": "ESNext",
         "lib": [
-            "es2020",
+            "ESNext",
             "DOM",
             "DOM.Iterable"
         ],
@@ -32,7 +29,6 @@
     },
     "include": [
         "src/**/*.ts",
-        "**/*.js",
     ],
     "exclude": [
         "node_modules"

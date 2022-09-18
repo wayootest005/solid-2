@@ -27,6 +27,7 @@ importers:
       '@chialab/esbuild-plugin-postcss': latest
       '@chialab/postcss-preset-chialab': ^0.17.0
       '@chialab/rna': ^0.17.3
+      '@chialab/rna-bundler': ^0.17.4
       '@chialab/rna-dev-server': ^0.17.5
       '@custom-elements-manifest/analyzer': ^0.6.3
       '@effect/core': 0.0.7
@@ -91,7 +92,8 @@ importers:
       '@11ty/eleventy-plugin-syntaxhighlight': 4.1.0
       '@chialab/esbuild-plugin-postcss': 0.17.1_ts-node@10.9.1
       '@chialab/postcss-preset-chialab': 0.17.0_postcss@8.4.16
-      '@chialab/rna': 0.17.3_fadbm6oorjap4tmxsboyv2tsri
+      '@chialab/rna': 0.17.3_ki55erv377txdqxebxa3wbhzae
+      '@chialab/rna-bundler': 0.17.4_zrbpz7uhs2d6y2257p2tkzixqm
       '@chialab/rna-dev-server': 0.17.5_zrbpz7uhs2d6y2257p2tkzixqm
       '@custom-elements-manifest/analyzer': 0.6.4
       '@open-wc/testing': 3.1.6
@@ -1658,7 +1660,7 @@ packages:
     engines: {node: '>=13'}
     dev: true
 
-  /@chialab/rna/0.17.3_fadbm6oorjap4tmxsboyv2tsri:
+  /@chialab/rna/0.17.3_ki55erv377txdqxebxa3wbhzae:
     resolution: {integrity: sha512-hP405oydkukNOBnTPBJ+6l+Hp6Zca4BID/3nd729ApLoaQoGhFumEcm5akSn1/QoSnb4Dexk7i25ZOe8y1Zsyg==}
     engines: {node: '>=13'}
     hasBin: true
@@ -1683,6 +1685,7 @@ packages:
       '@chialab/rna-saucelabs-test-runner':
         optional: true
     dependencies:
+      '@chialab/rna-bundler': 0.17.4_zrbpz7uhs2d6y2257p2tkzixqm
       '@chialab/rna-dev-server': 0.17.5_zrbpz7uhs2d6y2257p2tkzixqm
       '@chialab/rna-logger': 0.17.0
     dev: true

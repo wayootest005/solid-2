@@ -2,5 +2,5 @@
  * @tsplus global
  */
 import type {} from '@effect/html/global';
-export {};
+import '@effect/html/global';
 //# sourceMappingURL=globals.d.ts.map

@@ -16,7 +16,7 @@
       "outputs": []
     },
     "bundle": {
-      "dependsOn": ["^build:watch"],
+      "dependsOn": ["build:watch"],
       "outputs": ["www/**"]
     },
     "dev": {

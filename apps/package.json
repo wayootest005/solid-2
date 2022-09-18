@@ -9,7 +9,8 @@
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch",
-    "bundle": "rna build --watch  www/index.html --output public --format esm --platform browser",
+    "bundle:2": "rna build --watch  --bundle  dist/index.js --output public --format esm --platform browser",
+    "bundle": "node --experimental-specifier-resolution=node --experimental-top-level-await --loader ts-node/esm ./scripts/build2.ts",
     "clean": "rimraf my-element.{d.ts,d.ts.map,js,js.map} test/my-element.{d.ts,d.ts.map,js,js.map} test/my-element_test.{d.ts,d.ts.map,js,js.map}",
     "lint": "npm run lint:lit-analyzer && npm run lint:eslint",
     "lint:eslint": "eslint 'src/**/*.ts'",
@@ -60,6 +61,7 @@
     "@chialab/esbuild-plugin-postcss": "latest",
     "@chialab/postcss-preset-chialab": "^0.17.0",
     "@chialab/rna": "^0.17.3",
+    "@chialab/rna-bundler": "^0.17.4",
     "@chialab/rna-dev-server": "^0.17.5",
     "@custom-elements-manifest/analyzer": "^0.6.3",
     "@open-wc/testing": "latest",
