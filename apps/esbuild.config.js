@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 import esbuildServe from 'esbuild-serve';
-import autoprefixer from 'autoprefixer';
-import postCssPlugin from 'esbuild-plugin-postcss2';
+//import autoprefixer from 'autoprefixer';
+import postcssPlugin from '@chialab/esbuild-plugin-postcss';
 
 esbuildServe(
   {
@@ -10,11 +10,7 @@ esbuildServe(
     entryPoints: ['dist/index.js'],
     bundle: true,
     outfile: 'www/main.js',
-    plugins: [
-      postCssPlugin.default({
-        plugins: [autoprefixer],
-      }),
-    ],
+    plugins: [postcssPlugin()],
   },
   {root: 'www'}
 );

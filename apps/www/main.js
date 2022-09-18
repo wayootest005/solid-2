@@ -10955,8 +10955,8 @@ ${error}`);
   // dist/index.js
   var fileName_135 = "C:/Users/t/Desktop/Programmieren/Effect/Effect-2/solid-2/apps/src/index.ts";
   var myPage = html` <div>Here's my main page.</div> `;
-  var myListView = html`<div>Here's my main page4.</div>`;
+  var myListView = html`<p class="text-blue-600">The quick brown fox...</p>`;
   var myPage2 = html` ${myPage} ${myListView} `;
-  var program = map_(render(document.body, html` ${myPage2}`), () => void 0, fileName_135 + ":10:4");
-  unsafeRunPromise(program, fileName_135 + ":13:25");
+  var program = map_(render(document.body, html` ${myPage2}`), () => void 0, fileName_135 + ":11:4");
+  unsafeRunPromise(program, fileName_135 + ":14:25");
 })();

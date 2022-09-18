@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/index.ts"],
+  "sourcesContent": ["import './globals';\r\nimport '../assets/css/main.css';\r\n\r\nconst myPage = html` <div>Here's my main page.</div> `;\r\n\r\nconst myListView = html`<p class=\"text-blue-600\">The quick brown fox...</p>`;\r\n\r\nconst myPage2 = html` ${myPage} ${myListView} `;\r\n\r\nconst program = Do(($) => {\r\n  $(render(document.body, html` ${myPage2}`));\r\n});\r\n\r\nprogram.unsafeRunPromise();\r\n"],
+  "mappings": ";;;;;AAGA,IAAM,SAAS;AAEf,IAAM,aAAa;AAEnB,IAAM,UAAU,wBAAQ,UAAU;AAElC,IAAM,UAAO,qBACT,uBAAO,SAAS,MAAM,wBAAQ,SAAS,GAAC,MAAA,QAAA,aAAA,OAAA;AAG5C,iCAAA,SAAO,aAAA,QAAA;",
+  "names": []
+}
