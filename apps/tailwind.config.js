@@ -1,7 +1,7 @@
 module.exports = {
-  mode: 'jit',
-  purge: ['./src/**/*.tsx'],
-  theme: {},
-  variants: {},
+  content: ['./dist/**/*.{html,js}'],
+  theme: {
+    extend: {},
+  },
   plugins: [],
 };
