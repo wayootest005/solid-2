@@ -5,6 +5,8 @@ import type {NoParamCallback} from 'fs';
 import {copyFile, mkdir} from 'fs/promises';
 import path from 'path';
 
+const outdir = 'public';
+
 const copy = async (sourcePath: string, dest: string): Promise<void> => {
   try {
     await mkdir(path.dirname(dest), {recursive: true});
@@ -22,19 +24,15 @@ const copy = async (sourcePath: string, dest: string): Promise<void> => {
     });
 };
 
-export const copyFiles = async (
+const copyFiles = async (
   paths: {[s: string]: string},
   watch: boolean
 ): Promise<FSWatcher[]> => {
   if (watch) {
     const watchers = Object.keys(paths).map((s) => chokidar.watch(s));
-    console.log('path');
-    console.log(paths);
+
     for (const watcher of watchers) {
       watcher.on('add', async (path) => {
-        console.log('add');
-        console.log(path);
-        console.log(paths[path]);
         await copy(path, paths[path]);
       });
       watch &&
@@ -48,3 +46,10 @@ export const copyFiles = async (
   }
   return [];
 };
+
+copyFiles(
+  {
+    'assets\\index.html': `${outdir}\\index.html`,
+  },
+  true
+);
