@@ -313,8 +313,8 @@ video {
 .border-2 {
   border-width: 2px;
 }
-.border-rose-500 {
+.border-rose-600 {
   --tw-border-opacity: 1;
-  border-color: rgb(244 63 94 / var(--tw-border-opacity));
+  border-color: rgb(225 29 72 / var(--tw-border-opacity));
 }
 /*# sourceMappingURL=/index.css.map */

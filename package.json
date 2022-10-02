@@ -2,7 +2,7 @@
   "name": "root",
   "scripts": {
     "start": "turbo run build dev",
-    "dev:b": "turbo run build:watch bundle  --filter=./apps/",
+    "dev:b": "turbo run build:watch copy bundle serve  --filter=./apps/",
     "dev:s": "turbo run serve --filter=./apps/",
     "lint": "turbo run lint",
     "postinstall": "tsplus-install"

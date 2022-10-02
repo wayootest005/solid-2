@@ -8,6 +8,12 @@
       "dependsOn": ["^app:dev"],
       "outputs": ["dist/**", ".next/**"]
     },
+
+    "copy": {
+      "dependsOn": ["^copy"],
+      "outputs": ["dist/**"]
+    },
+
     "build:watch": {
       "dependsOn": ["^build:watch"],
       "outputs": ["dist/**"],
