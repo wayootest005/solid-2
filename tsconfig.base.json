@@ -39,7 +39,7 @@
     "incremental": true,
     "removeComments": false,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "preserve"
   },
   "exclude": ["node_modules", "dist"]
 }

@@ -24,7 +24,12 @@
     "noImplicitOverride": true,
     "skipLibCheck": true,
     "strictNullChecks": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "plugins": [
+      {
+        "name": "typescript-lit-html-plugin"
+      }
+    ]
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]
