@@ -4,7 +4,7 @@ import * as tsplus_module_2 from "@effect/core/io/Effect/operations/map";
 import * as tsplus_module_3 from "@effect/core/io/Effect/operations/runtime";
 //import './globals.ts';
 import './index.css';
-const myPage = tsplus_module_1.html ` <div>Here's my main page3.</div> `;
+const myPage = tsplus_module_1.html ` <div>Here's my main page5.</div> `;
 const myListView = tsplus_module_1.html ` <input class="border-2 border-rose-600 ..." />`;
 const myPage2 = tsplus_module_1.html ` ${myPage} ${myListView} `;
 const program = tsplus_module_2.map_(tsplus_module_1.render(document.body, tsplus_module_1.html ` ${myPage2}`), () => void 0, fileName_1 + ":13:4");

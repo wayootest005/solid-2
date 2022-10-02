@@ -10817,7 +10817,7 @@ var svg = tag("svg");
 
 // dist/index.js
 var fileName_135 = "C:/Users/To/Desktop/Programme/Javascript/Effect-lit/apps/html-4/apps/src/index.ts";
-var myPage = html` <div>Here's my main page3.</div> `;
+var myPage = html` <div>Here's my main page5.</div> `;
 var myListView = html` <input class="border-2 border-rose-600 ..." />`;
 var myPage2 = html` ${myPage} ${myListView} `;
 var program = map_(render(document.body, html` ${myPage2}`), () => void 0, fileName_135 + ":13:4");
